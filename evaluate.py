@@ -13,6 +13,8 @@ import subprocess
 import numpy
 from moviepy.video.io.VideoFileClip import VideoFileClip
 import moviepy.video.io.ffmpeg_writer as ffmpeg_writer
+import os
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
 BATCH_SIZE = 4
 DEVICE = '/gpu:0'
